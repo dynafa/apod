@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Spartan:wght@200&display=swap');
+*, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(0,0,0,0.8);
+}
+.textData {
+    color: #fff;
+    padding: 20px;
+    width: calc(100% - 40px);
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.cont{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#nasa-logo {
+    width: 256px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+h1 {
+    padding: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+p {
+    padding: 20px 20px 20px 20px;
+    font-family: 'Spartan', sans-serif;
+    text-align: justify;
+    width: 80%
+}
+.navbtns {
+    font-family: 'Spartan', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+}
+.navbtns-cont {
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+#video-iframe {
+    display: none;
+}

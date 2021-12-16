@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APOD | {{ .Title }}</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+<div class="cont">
+    <div>
+        <img id="img-cont" onclick="window.open('{{ .HDUrl }}', '_blank')" src="{{ .Url }}" width="1000px"/>
+        <iframe id="video-iframe" width="1000" height="500" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="textData">
+        <div>
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Date }}<i><a style="float: right">{{ .Copyright }}</a></i></p>
+            <div id="exp">{{ .Explanation }}</div>
+        </div>
+        <div>
+            <img id="nasa-logo" src="/public/nasa-text-white.png"/>
+            <div class="navbtns-cont">
+                <a class="navbtns" id="back"><</a><a class="navbtns" id="forward">></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    var mediaType = {{ .MediaType }};
+</script>
+<script src="/public/js/main.js"></script>
+</html>
